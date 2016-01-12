@@ -7,16 +7,28 @@
 //
 
 #import "ViewController.h"
-
+#import "DatePickView.h"
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UIButton *btn;
 
 @end
 
 @implementation ViewController
-
+{
+    DatePickView *dateView;
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+}
+- (IBAction)click:(UIButton *)sender {
+    dateView = [[DatePickView alloc]initWithFrame:self.view.bounds];
+    __weak typeof(self)weakself = self;
+    //点击确定后的block回调
+    [dateView setBlockDate:^(NSString *dateString) {
+        [weakself.btn setTitle:dateString forState:UIControlStateNormal];
+    }];
+    [self.view addSubview:dateView];
 }
 
 - (void)didReceiveMemoryWarning {

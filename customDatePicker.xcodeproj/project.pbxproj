@@ -15,6 +15,7 @@
 		0CBFA0AE1C44ECB1009076F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CBFA0AC1C44ECB1009076F7 /* LaunchScreen.storyboard */; };
 		0CBFA0B91C44ECB2009076F7 /* customDatePickerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CBFA0B81C44ECB2009076F7 /* customDatePickerTests.m */; };
 		0CBFA0C41C44ECB2009076F7 /* customDatePickerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CBFA0C31C44ECB2009076F7 /* customDatePickerUITests.m */; };
+		0CBFA0D41C44ED19009076F7 /* DatePickView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CBFA0D31C44ED19009076F7 /* DatePickView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		0CBFA0BF1C44ECB2009076F7 /* customDatePickerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = customDatePickerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CBFA0C31C44ECB2009076F7 /* customDatePickerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = customDatePickerUITests.m; sourceTree = "<group>"; };
 		0CBFA0C51C44ECB2009076F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0CBFA0D21C44ED19009076F7 /* DatePickView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatePickView.h; sourceTree = "<group>"; };
+		0CBFA0D31C44ED19009076F7 /* DatePickView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatePickView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +104,7 @@
 		0CBFA09D1C44ECB1009076F7 /* customDatePicker */ = {
 			isa = PBXGroup;
 			children = (
+				0CBFA0D11C44ED0A009076F7 /* DatePickView */,
 				0CBFA0A11C44ECB1009076F7 /* AppDelegate.h */,
 				0CBFA0A21C44ECB1009076F7 /* AppDelegate.m */,
 				0CBFA0A41C44ECB1009076F7 /* ViewController.h */,
@@ -138,6 +142,15 @@
 				0CBFA0C51C44ECB2009076F7 /* Info.plist */,
 			);
 			path = customDatePickerUITests;
+			sourceTree = "<group>";
+		};
+		0CBFA0D11C44ED0A009076F7 /* DatePickView */ = {
+			isa = PBXGroup;
+			children = (
+				0CBFA0D21C44ED19009076F7 /* DatePickView.h */,
+				0CBFA0D31C44ED19009076F7 /* DatePickView.m */,
+			);
+			path = DatePickView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,6 +287,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0CBFA0A61C44ECB1009076F7 /* ViewController.m in Sources */,
+				0CBFA0D41C44ED19009076F7 /* DatePickView.m in Sources */,
 				0CBFA0A31C44ECB1009076F7 /* AppDelegate.m in Sources */,
 				0CBFA0A01C44ECB1009076F7 /* main.m in Sources */,
 			);
